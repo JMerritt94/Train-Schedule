@@ -65,6 +65,7 @@ $("#submit").on("click", function (event) {
     }
     database.ref().push(userTrain)
     console.log(userTrain)
+    $(".form-control").val("");
 })
 
 database.ref().on("child_added", function (snapshot) {
