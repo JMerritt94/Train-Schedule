@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+       
+ <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+
+
+
+</head>
+
+<body>
+
+        
+
+
+
+    <div class="container col-md-8">
+<div class="jumbotron">
+                <div class="container">
+                  <h1 class="display-4">The trains will run on time!</h1>
+                 
+                </div>
+              </div>
+        <div class="card">
+
+            <div class="card-body">
+                <h5 class="card-title">Add Train</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody id="traintable">
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title">Add Train</h5>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Train Name</label>
+                        <input type="email" class="form-control" id="TrainName" placeholder="Train Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Destination</label>
+                        <input type="email" class="form-control" id="Destination" placeholder="Destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">First Train Time (HH-MM)</label>
+                        <input type="email" class="form-control" id="Firsttraintime" placeholder="First Train Time">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Frequency (Min)</label>
+                        <input type="email" class="form-control" id="Frequency" placeholder="Frequency (min)">
+
+                    </div>
+                    <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
+        
+
+</body>
+
+</html>
